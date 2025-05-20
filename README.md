@@ -79,5 +79,3 @@ This project is automatically deployed via Vercel when changes are pushed to `ma
 ## License
 
 MIT License.
-
-DL
