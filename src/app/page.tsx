@@ -21,8 +21,6 @@ export default function Home() {
   const [hoveredFormula, setHoveredFormula] = useState<number | null>(null); 
 
   useEffect(() => {
-    console.log("API URL:", process.env.NEXT_PUBLIC_API_URL);
-    
     if (!process.env.NEXT_PUBLIC_API_URL) {
       // API URL is not defined
       setError("API URL is not set.");
