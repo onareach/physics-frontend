@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Physics Formula Viewer",
+  title: "Formula Viewer",
   description: "A web application for viewing and exploring physics formulas with LaTeX rendering",
 };
 

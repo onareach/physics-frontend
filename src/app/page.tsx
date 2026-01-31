@@ -48,6 +48,25 @@ export default function Home() {
   return (
     <MathJaxContext>
       <div style={{ marginLeft: '20px', marginTop: '20px' }}>
+        {/* Navigation */}
+        <div style={{ marginBottom: '20px' }}>
+          <Link href="/applications" style={{ 
+            textDecoration: 'underline', 
+            color: 'green',
+            fontSize: '16px',
+            marginRight: '20px'
+          }}>
+            → View Problem Applications
+          </Link>
+          <Link href="/tables" style={{ 
+            textDecoration: 'underline', 
+            color: 'purple',
+            fontSize: '16px'
+          }}>
+            → Database Tables Management
+          </Link>
+        </div>
+
         {/* Page title */}
         <h1 style={{
           marginBottom: '20px',
@@ -55,7 +74,7 @@ export default function Home() {
           fontSize: '32px',
           fontWeight: 'bold'
         }}>
-          Physics Formula Viewer
+          Formula Viewer
         </h1>
 
         {loading ? (
