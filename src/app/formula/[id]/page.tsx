@@ -9,6 +9,7 @@ interface Formula {
   formula_name: string;
   latex: string;
   formula_description: string;
+  english_verbalization?: string;
 }
 
 export default function FormulaPage() {
@@ -72,6 +73,17 @@ export default function FormulaPage() {
           <MathJax>
             <p style={{ fontSize: "24px", marginBottom: "20px" }}>{`\\(${formula?.latex}\\)`}</p>
           </MathJax>
+          {formula?.english_verbalization && (
+            <p style={{ 
+              marginTop: "16px", 
+              marginBottom: "24px", 
+              fontStyle: "italic",
+              color: "#555",
+              fontSize: "18px"
+            }}>
+              <strong>In words:</strong> {formula.english_verbalization}
+            </p>
+          )}
         </MathJaxContext>
       <button
         onClick={() => window.close()} // Closes the current tab
